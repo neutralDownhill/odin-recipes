@@ -1,0 +1,52 @@
+body {
+    margin: 50px 20% 0 20%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    padding: 0 5%;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    width: 30%;
+}
+
+nav a, nav a:link, nav a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+img {
+    padding: 20px;
+    height: auto;
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, ul, ol {
+    margin: 0;
+    min-width: 400px;
+    padding: 0;
+}
+
+ul {
+    width: 100%;
+}
