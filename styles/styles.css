@@ -1,6 +1,32 @@
-body {
-    margin: 50px 20% 0 20%;
+html, body {
+    background: #ddd;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    pad: 0;
+}
+
+#wrapper {
+    background: #fff;
+    height: 100%;
+    margin: 0 auto;
+    min-width: 500px;
+    padding: 0 25px;
+    width: 500px;
+}
+
+#wrapper > a:first-of-type {
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 25px 0;
+    text-align: center;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 nav ul {
@@ -9,7 +35,7 @@ nav ul {
 }
 
 nav ul li {
-    float: left;
+    display: inline-block;
     list-style: none;
     margin: 0;
     padding: 10px 0;
@@ -18,33 +44,61 @@ nav ul li {
     width: 30%;
 }
 
+nav ul li a {
+    padding: 10px;
+}
+
+a, a:link, a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #555;
+    text-decoration: none;
+}
+
 nav a, nav a:link, nav a:visited {
-    color: blue;
+    color: #666;
     text-decoration: none;
 }
 
 nav a:hover, nav a:active {
-    color: blueviolet;
+    color: #999;
     text-decoration: none;
 }
 
 img {
     display: block;
     height: auto;
-    margin: 25px auto;
     width: 500px;
 }
 
-h1, ul, ol {
+h1, h2, ul, ol {
     margin: 0;
-    min-width: 400px;
     padding: 0;
 }
 
 h1 {
+    padding: 25px 0;
     text-align: center;
 }
 
+h2 {
+    background: #eee;
+    color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+:not(nav) > ul > li, :not(nav) > ol > li {
+    padding: 10px 0;
+}
+
 li {
-    margin: 0 0 0 25px;
+    margin-left: 40px;
 }
